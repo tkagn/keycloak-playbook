@@ -47,6 +47,19 @@ or
 ansible-playbook -i inventory keycloak-day1day2.yaml
 ```
 
+
+Deploy Keycloak Quarkus version:
+
+```bash
+ansible-playbook -i invnetory keycloak_quarkus.yaml
+```
+
+Deploy Red Hat SSO:
+
+```bash
+ansible-playbook -i inventory rhsso.yaml
+```
+
 Validate by accessing http://keycloak-host:8080
 
 ## References
@@ -56,3 +69,4 @@ Validate by accessing http://keycloak-host:8080
 - Red Hat Single Sign-On - https://access.redhat.com/products/red-hat-single-sign-on
 - Deploy Keycloak single sign-on with Ansible - https://developers.redhat.com/articles/2022/04/20/deploy-keycloak-single-sign-ansible#
 - Automate your SSO with Ansible and Keycloak - https://developers.redhat.com/articles/2023/02/20/automate-your-sso-ansible-and-keycloak?sc_cid=7013a0000034pQnAAI#install_keycloak_with_ansible 
+- Ansible Collection - middleware_automation.keycloak GitHub - https://github.com/ansible-middleware/keycloak
