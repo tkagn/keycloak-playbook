@@ -17,12 +17,14 @@ Keycloak is an Open Source Identity and Access Management solution for modern Ap
 ## Prerequisites
 
 - RHEL or Fedora system
-- >= Ansible 2.9
+- Ansible 2.9 or greater
 
 ## Files
 
 - keycloak-day1.yaml - Install keycloak server
 - keycloak-day1day2.yaml - Install keycloak server, define realm, configure roles and users, and define clients
+- inventory - Ansible inventory file
+- ansible.cfg - ansible configuration file
 
 ## Usage
 
@@ -45,7 +47,7 @@ or
 ansible-playbook -i inventory keycloak-day1day2.yaml
 ```
 
-Validate by accessing http://<host>:8080
+Validate by accessing http://keycloak-host:8080
 
 ## References
 
